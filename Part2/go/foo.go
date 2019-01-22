@@ -28,9 +28,6 @@ func number_server(add_number <-chan int, control <-chan int, number chan<- int)
 			if signal == GetNumber{
 				number <- i
 			}
-		default:
-			return
-
 		}
 	}
 }
